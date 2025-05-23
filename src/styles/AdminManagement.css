@@ -1,0 +1,342 @@
+.admin-management {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  min-height: calc(100vh - 80px); 
+}
+
+
+.admin-management h2 {
+  margin: 2.5rem 0 1.5rem 0;
+  color: #2C3E50;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.admin-management h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+ 
+  border-radius: 2px;
+}
+
+.admin-management h2:first-of-type {
+  margin-top: 1rem;
+}
+
+
+.users-table,
+.registrations-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+
+.users-table th,
+.registrations-table th {
+  background: linear-gradient(135deg, #2C3E50 0%, #34495e 100%);
+  color: #ffffff;
+  padding: 1rem 1.2rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+}
+
+.users-table th.status,
+.registrations-table th.status {
+  text-align: center;
+}
+
+
+.users-table td,
+.registrations-table td {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid #f1f3f4;
+  vertical-align: middle;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.users-table td.status,
+.registrations-table td.status {
+  text-align: center;
+  font-weight: 600;
+}
+
+
+.users-table tbody tr:hover,
+.registrations-table tbody tr:hover {
+  background-color: #f8fffe;
+  transform: translateY(-1px);
+  transition: all 0.2s ease;
+}
+
+
+.users-table tbody tr[style*="opacity"] {
+  background-color: #fef2f2;
+}
+
+.users-table tbody tr[style*="opacity"]:hover {
+  background-color: #fecaca;
+}
+
+
+.users-table td:last-child,
+.registrations-table td:last-child {
+  width: 1%;
+  white-space: nowrap;
+}
+
+
+.admin-management button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  min-width: 80px;
+}
+
+
+.btn-block {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white;
+  border: 2px solid transparent;
+}
+
+.btn-block:hover {
+  background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+.btn-activate {
+  background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+  color: white;
+  border: 2px solid transparent;
+}
+
+.btn-activate:hover {
+  background: linear-gradient(135deg, #229954 0%, #1e8449 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+.btn-delete {
+  background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+  color: white;
+  border: 2px solid transparent;
+}
+
+.btn-delete:hover {
+  background: linear-gradient(135deg, #7f8c8d 0%, #6c7b7d 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(149, 165, 166, 0.3);
+}
+
+.btn-approve {
+  background: linear-gradient(135deg, #18BC9C 0%, #10B981 100%);
+  color: white;
+  border: 2px solid transparent;
+}
+
+.btn-approve:hover {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(24, 188, 156, 0.3);
+}
+
+.btn-reject {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white;
+  border: 2px solid transparent;
+}
+
+.btn-reject:hover {
+  background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+.btn-delete-registration {
+  background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+  color: white;
+  border: 2px solid transparent;
+}
+
+.btn-delete-registration:hover {
+  background: linear-gradient(135deg, #7f8c8d 0%, #6c7b7d 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(149, 165, 166, 0.3);
+}
+
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.admin-management select {
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  border: 2px solid #e5e7eb;
+  background-color: #ffffff;
+  color: #374151;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.admin-management select:hover {
+  border-color: #18BC9C;
+}
+
+.admin-management select:focus {
+  outline: none;
+  border-color: #18BC9C;
+  box-shadow: 0 0 0 3px rgba(24, 188, 156, 0.1);
+}
+
+.admin-management select:disabled {
+  background-color: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+
+.admin-management .status {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.85rem;
+}
+
+
+@media (max-width: 1024px) {
+  .admin-management {
+    padding: 1.5rem;
+  }
+  
+  .users-table,
+  .registrations-table {
+    font-size: 0.9rem;
+  }
+  
+  .users-table th,
+  .registrations-table th,
+  .users-table td,
+  .registrations-table td {
+    padding: 0.8rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-management {
+    padding: 1rem;
+  }
+  
+  .admin-management h2 {
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem 0;
+  }
+  
+  .users-table,
+  .registrations-table {
+    font-size: 0.85rem;
+    border-radius: 8px;
+  }
+  
+  .users-table th,
+  .registrations-table th,
+  .users-table td,
+  .registrations-table td {
+    padding: 0.7rem 0.8rem;
+  }
+  
+  .admin-management button {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+    min-width: 70px;
+  }
+  
+  .actions {
+    gap: 0.3rem;
+    flex-direction: column;
+  }
+  
+  .admin-management select {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+    min-width: 90px;
+  }
+}
+
+@media (max-width: 640px) {
+  .users-table,
+  .registrations-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .admin-management {
+    padding: 0.5rem;
+  }
+  
+  .admin-management h2 {
+    font-size: 1.3rem;
+  }
+}
+
+
+.admin-management .loading {
+  text-align: center;
+  padding: 2rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.admin-management .empty-state {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #6b7280;
+}
+
+.admin-management .empty-state h3 {
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+
+.users-table {
+  margin-top: 1rem;
+}

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/moj_react/static/css/main.c8d11b3d.css",
+    "main.js": "/moj_react/static/js/main.71f74c75.js",
+    "index.html": "/moj_react/index.html",
+    "main.c8d11b3d.css.map": "/moj_react/static/css/main.c8d11b3d.css.map",
+    "main.71f74c75.js.map": "/moj_react/static/js/main.71f74c75.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8d11b3d.css",
+    "static/js/main.71f74c75.js"
+  ]
+}
