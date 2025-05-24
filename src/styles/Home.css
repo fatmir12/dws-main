@@ -5,7 +5,6 @@ body {
   color: #2C3E50;
 }
 
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -19,8 +18,10 @@ body {
 
 .home-container {
   animation: fadeIn 1.2s ease forwards;
-  opacity: 0; 
-  
+  /* Ukloni opacity: 0 jer sprečava prikaz sadržaja */
+  min-height: 60vh;
+  display: block;
+  visibility: visible;
 }
 
 .hero {
@@ -42,7 +43,6 @@ body {
   color: #ffffff;
 }
 
-
 .cta-button-hero {
   background-color: #18BC9C;
   color: white;
@@ -60,7 +60,6 @@ body {
   background-color: #139c83;
   transform: scale(1.05);
 }
-
 
 .how-it-works {
   padding: 3rem 2rem;
@@ -114,7 +113,6 @@ body {
   font-size: 1rem;
   color: #555;
 }
-
 
 @media (max-width: 700px) {
   .steps {

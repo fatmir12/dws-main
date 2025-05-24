@@ -3,7 +3,8 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  useNavigate
+  useNavigate,
+  Navigate
 } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
@@ -76,6 +77,8 @@ const AppContent = () => {
       <main className="content">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/dws-main" element={<Navigate to="/" replace />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/events" element={<Events />} />
           <Route path="/login" element={<Login onLogin={handleLogin} />} />
