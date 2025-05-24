@@ -126,5 +126,14 @@ npm start
 npx json-server --watch db.json --port 3001
 
 **SNIMCI EKRANA RADNE APLIKACIJE**
-![Opis slike](SnimciEkrana/avlijski.jpg)
-slika
+![Home stranica](SnimciEkrana/SnimakEkranaHome.png)
+![Home stranica nakon logina](SnimciEkrana/SnimakEkranaHome2.png)
+![Kontakt stranica](SnimciEkrana/SnimakEkranaKontakt.png)
+![Events stranica](SnimciEkrana/SnimakEkranaEvents.png)
+![Prijava na događaj](SnimciEkrana/SnimakEkranaPrijavaDogadjaj.png)
+![AdminPanel](SnimciEkrana/SnimakEkranaAdmin.png)
+![UserManagement](SnimciEkrana/SnimakEkranaManagement.png)
+![Moj profil stranica](SnimciEkrana/SnimakEkranaProfil.png)
+![Prikaz stranice na telefonu](SnimciEkrana/SnimakEkranaTelefon.png)
+![Prikaz Navbara na telefonu](SnimciEkrana/SnimakEkranaTelefonBezLogina.png)
+![Prikaz Navbara na telefonu kada je korisnik ulogovan](SnimciEkrana/SnimakEkranaTelefonMeniLoginovan.png)
