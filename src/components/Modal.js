@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Modal = ({ show, onClose, title, message }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   if (!show) return null;
 
   return (
@@ -8,7 +10,14 @@ const Modal = ({ show, onClose, title, message }) => {
       <div style={styles.modal}>
         <h3 style={styles.title}>{title}</h3>
         <p style={styles.message}>{message}</p>
-        <button style={styles.button} onClick={onClose}>U redu</button>
+        <button 
+          style={isHovered ? {...styles.button, ...styles.buttonHover} : styles.button}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          onClick={onClose}
+        >
+          U redu
+        </button>
       </div>
     </div>
   );
@@ -42,7 +51,7 @@ const styles = {
     color: "#333",
   },
   button: {
-    backgroundColor: "#18BC9C", // 
+    backgroundColor: "#18BC9C",
     border: "none",
     color: "#f9f9f9",
     padding: "10px 20px",
@@ -51,6 +60,9 @@ const styles = {
     fontWeight: "600",
     fontSize: "16px",
     transition: "background-color 0.3s ease",
+  },
+  buttonHover: {
+    backgroundColor: "#096653",
   }
 };
 
