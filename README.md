@@ -24,7 +24,7 @@ Eventify je web aplikacija koja omogućava pregled, praćenje i organizaciju dog
 - GitHub
 
 **STRUKTURA PROJEKTA**
-<pre> """dws-main-main/
+<pre>dws-main-main/
 │
 ├── public/
 │   └── index.html
@@ -65,7 +65,7 @@ Eventify je web aplikacija koja omogućava pregled, praćenje i organizaciju dog
 │
 ├── db.json
 ├── package.json
-└── README.md```</pre>
+└── README.md</pre>
 
 **FUNKCIONALNOSTI I OPIS DIZAJNA**
 
