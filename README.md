@@ -108,13 +108,13 @@ Eventify je web aplikacija koja omogućava pregled, praćenje i organizaciju dog
 - Nema mogućnost slanja poruke putem kontakt forme
 
 **KRATKI OPIS DOPRINOSA SVAKOG ČLANA GRUPE**
-*1. član - Fatmir Kurtiši - Frontend*
+*1. član - Fatmir Kurtiši - Frontend*<br>
 Ovaj član je bio zadužen za izradu svih stranica u aplikaciji koristeći React (Home, Events, Contact, Login, Register). Također je napravio navigaciju (Navbar i Footer), povezao stranice i prilagodio izgled tako da sve dobro funkcioniše i na mobilnim uređajima.
 
-*2. član - Deni Kosić - Backend (rad sa JSON serverom i podacima)*
+*2. član - Deni Kosić - Backend (rad sa JSON serverom i podacima)*<br>
 Ovaj član je bio zadužen da poveže aplikaciju sa db.json fajlom pomoću fetch metode. Omogućio je spremanje i čitanje podataka za prijavu i registraciju korisnika, kao i za događaje. Također je testirao da sve radi kako treba i dodao osnovnu validaciju.
 
-*3. član - Ahmed Halilović - Dizajn i dokumentacija*
+*3. član - Ahmed Halilović - Dizajn i dokumentacija*<br>
 Ovaj član je radio na dizajnu aplikacije – izabrao je boje, stilove i raspored elemenata tako da sve izgleda moderno i pregledno. Također je pisao dokumentaciju projekta, uključujući objašnjenja funkcionalnosti, korištene tehnologije i doprinose svih članova.
 
 **UPUTE ZA POKRETANJE PROJEKTA**
