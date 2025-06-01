@@ -475,17 +475,17 @@ body {
     padding: 1rem 1.5rem;
   }
 
-  /* Sakrij navbar-center na mobilnim uređajima */
+  
   .navbar-center {
     display: none;
   }
 
-  /* Sakrij navbar-right na mobilnim uređajima */
+  
   .navbar-right {
     display: none;
   }
 
-  /* Prikaži hamburger button */
+  
   .mobile-hamburger-wrapper {
     display: block;
     justify-self: end;
